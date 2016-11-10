@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/SDK-sample.iml" filepath="$PROJECT_DIR$/SDK-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/nki-sdk-vas-release/nki-sdk-vas-release.iml" filepath="$PROJECT_DIR$/nki-sdk-vas-release/nki-sdk-vas-release.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nki-sdk-vas-release/nki-sdk-vas-release.iml" filepath="$PROJECT_DIR$/nki-sdk-vas-release/nki-sdk-vas-release.iml" />
     </modules>
   </component>
 </project>
