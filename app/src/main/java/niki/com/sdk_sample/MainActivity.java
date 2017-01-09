@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        NikiConfig.initNiki(this, "key");
+        NikiConfig.initNiki(this, "key", "Sample APP");
         try {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("name", "Sitaram");
-            jsonObject.put("email", "Sitaram@zabbed.com");
-            jsonObject.put("phoneNumber", "9970967543");
+            jsonObject.put("name", "ABC");
+            jsonObject.put("email", "ABC@ced.com");
+            jsonObject.put("phoneNumber", "9911446321");
             jsonObject.put("regId", "regid");
             NikiConfig.getInstance().setUserData(this, jsonObject);
         } catch (Exception e) {
@@ -49,13 +49,26 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            if (NikiConfig.isNikiInitialized()) {
+                NikiConfig.getInstance().logout(this);
+
+            }
+            NikiConfig.initNiki(this, "key", "Merchant");
+            try {
+                JSONObject jsonObject = new JSONObject();
+                jsonObject.put("name", "xyz");
+                jsonObject.put("email", "xyz@xyz.com");
+                jsonObject.put("phoneNumber", "9711151751");
+                jsonObject.put("regId", "xyz");
+                NikiConfig.getInstance().setUserData(this, jsonObject);
+            } catch (Exception e) {
+
+            }
             return true;
         }
 

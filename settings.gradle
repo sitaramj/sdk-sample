@@ -1,1 +1,1 @@
-include ':app', ':nki-sdk-vas-release'
+include ':app'
