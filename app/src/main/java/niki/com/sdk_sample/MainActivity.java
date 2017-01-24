@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("name", "ABC");
             jsonObject.put("email", "ABC@ced.com");
-            jsonObject.put("phoneNumber", "9911446321");
+            jsonObject.put("phoneNumber", "xxxxxxxxxx");
             jsonObject.put("regId", "regid");
             NikiConfig.getInstance().setUserData(this, jsonObject);
         } catch (Exception e) {
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("name", "xyz");
                 jsonObject.put("email", "xyz@xyz.com");
-                jsonObject.put("phoneNumber", "9711151751");
+                jsonObject.put("phoneNumber", "xxxxxxxxxx");
                 jsonObject.put("regId", "xyz");
                 NikiConfig.getInstance().setUserData(this, jsonObject);
             } catch (Exception e) {

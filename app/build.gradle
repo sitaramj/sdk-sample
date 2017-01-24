@@ -30,6 +30,7 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.mixpanel.android:mixpanel-android:4.+'
     compile 'com.mcxiaoke.volley:library:1.0.19'
-    compile project(':niki-sdk-1.0')
+    compile 'com.niki:niki-sdk:1.0.1'
+
 
 }
