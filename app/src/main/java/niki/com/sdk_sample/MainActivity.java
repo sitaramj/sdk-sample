@@ -4,13 +4,12 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.niki.config.NikiConfig;
-
-import org.json.JSONObject;
+import com.niki.config.SessionConfig;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,17 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        NikiConfig.initNiki(this, "key", "Sample APP");
-        try {
-            JSONObject jsonObject = new JSONObject();
-            jsonObject.put("name", "ABC");
-            jsonObject.put("email", "ABC@ced.com");
-            jsonObject.put("phoneNumber", "xxxxxxxxxx");
-            jsonObject.put("regId", "regid");
-            NikiConfig.getInstance().setUserData(this, jsonObject);
-        } catch (Exception e) {
-
-        }
+        SessionConfig config = new SessionConfig.Builder()
+                .setAccessKey("1480670100")
+                .setSecret("f2IRd4YC552QZAqu2DThFdzwYAHyuxbu1NfVJghYazw=")
+                .setMerchantTitle("Sample App").build();
+        NikiConfig.initNiki(this, config);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,17 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 NikiConfig.getInstance().logout(this);
 
             }
-            NikiConfig.initNiki(this, "key", "Merchant");
-            try {
-                JSONObject jsonObject = new JSONObject();
-                jsonObject.put("name", "xyz");
-                jsonObject.put("email", "xyz@xyz.com");
-                jsonObject.put("phoneNumber", "xxxxxxxxxx");
-                jsonObject.put("regId", "xyz");
-                NikiConfig.getInstance().setUserData(this, jsonObject);
-            } catch (Exception e) {
-
-            }
+            SessionConfig config = new SessionConfig.Builder()
+                    .setAccessKey("1480670100")
+                    .setSecret("f2IRd4YC552QZAqu2DThFdzwYAHyuxbu1NfVJghYazw=")
+                    .setMerchantTitle("Sample App").build();
+            NikiConfig.initNiki(this, config);
             return true;
         }
 
