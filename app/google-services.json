@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "26543545944",
+    "project_id": "techbins-niki"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26543545944:android:0c85e81e5254b855",
+        "android_client_info": {
+          "package_name": "com.techbins.niki"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmqhFO8CtZzGdmyDC4g01MaFytkO7rtzI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-63365004-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26543545944:android:5248b4cd3d7a9e1f",
+        "android_client_info": {
+          "package_name": "com.techbins.niki.beta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmqhFO8CtZzGdmyDC4g01MaFytkO7rtzI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-63365004-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
